@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myLizhiNews">
+<head>
+	<meta charset="UTF-8">
+	<title>荔枝新闻</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div ng-view></div>
+	<div class="tabBar">
+		<a href="#/">
+			<span></span>
+			<p>新闻</p>
+		</a>
+		<a href="#/video">
+			<span></span>
+			<p>视频</p>
+		</a>
+		<a href="#/fm">
+			<span></span>
+			<p>电台</p>
+		</a>
+		<a href="#/find">
+			<span></span>
+			<p>发现</p>
+		</a>
+		<a href="#mine">
+			<span></span>
+			<p>我的</p>
+		</a>
+	</div>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular-route.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="script/controller/controllers.js"></script>
+	<!-- <script type="text/javascript" src="lib/require.js" data-main="main"></script> -->
+</body>
+</html>
