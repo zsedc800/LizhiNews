@@ -3,9 +3,10 @@ app.controller('homeCtrl', function ($scope, $css) {
 	$css.add('css/home.css');
 })
 
-.controller('videoCtrl', function ($scope, $css) {
+.controller('videoCtrl', function ($scope, $css,videoService) {
 		$scope.data = 'video';
 		$css.add('css/video.css');
+		videoService.fn();
 	})
 	.controller('fmCtrl', function ($scope, $css) {
 		$scope.data = 'fm';
