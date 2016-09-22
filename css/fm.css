@@ -1,0 +1,140 @@
+img {
+  border: 0;
+}
+.fm_head {
+  width: 100%;
+  height: 1.34rem;
+  background: #fff;
+}
+.fm_head h2 {
+  display: inline-block;
+  width: 9.43rem;
+  height: 0.53rem;
+  margin-top: 0.305rem;
+  margin-left: 0.56rem ;
+  font-size: 0.43rem;
+  line-height: 0.5rem;
+}
+.fm_head h2 .fm_head_span {
+  display: inline-block;
+  width: 0.53rem;
+  height: 0.53rem;
+  background: url(../img/01_03.png) no-repeat;
+  background-size: 100% ;
+  vertical-align: middle;
+}
+.fm_head h2 .fm_head_span2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.16rem;
+}
+.fm_log {
+  width: 100%;
+  height: 2.78rem;
+  background: url(../img/01_06.png) no-repeat;
+  background-size: 100% ;
+}
+.fm_programa {
+  width: 100%;
+  height: 1.48rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.fm_programa span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.fm_programa h5 {
+  display: inline-block;
+  width: 9.56rem;
+  height: 0.528rem;
+  margin-top: 0.476rem;
+  line-height: 0.528rem;
+}
+.fm_programa h5 .fm_programa_left {
+  width: 0.056rem;
+  height: 0.528rem;
+  background: url(../img/01_09.png) no-repeat;
+  background-size: 100% ;
+  margin-left: 0.278rem;
+}
+.fm_programa h5 .fm_programa_writ {
+  margin-left: 0.3rem;
+}
+.fm_programa h5 a {
+  display: inline-block;
+  float: right;
+  width: 1.3rem;
+  height: 100%;
+  color: #999;
+}
+.fm_programa h5 a .fm_programa_ar {
+  float: right;
+  font-size: 0.53rem;
+  color: #cdcdcd;
+}
+.fm_programaList {
+  background: #fff;
+  width: 100%;
+  height: 8.63rem;
+}
+.fm_programaList ul {
+  padding-top: 0.32rem;
+  margin-left: 0.1574rem;
+}
+.fm_programaList ul li {
+  float: left;
+  margin-right: 0.1852rem;
+  width: 4.7361rem;
+  height: 3.83rem;
+}
+.fm_programaList ul li img {
+  width: 4.722rem;
+  height: 2.96rem;
+}
+.fm_programaList ul li p {
+  height: 0.83rem;
+  line-height: 0.83rem;
+  text-indent: 0.1rem;
+}
+.fm_programaList ul li:nth-child(1),
+.fm_programaList ul li:nth-child(2) {
+  margin-bottom: 0.59rem;
+}
+.fm_radio {
+  width: 100%;
+  background: #fff;
+  height: 10.149rem;
+}
+.fm_radio .fm_radio_ul li {
+  text-align: center;
+  float: left;
+  width: 2.72rem;
+  height: 3.185rem;
+  margin: 0.148rem 0.05rem 0.05rem 0.3rem;
+}
+.fm_radio .fm_radio_ul li img {
+  width: 2.194rem;
+  height: 2.194rem;
+}
+.fm_radio .fm_radio_ul li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis ;
+  height: 0.5rem;
+  font-size: 0.3rem;
+  text-align: left;
+}
+.fm_radio .fm_radio_ul li span {
+  display: inline-block;
+  height: 0.37rem;
+  font-size: 0.315rem;
+  vertical-align: top;
+  text-align: left;
+  width: 100%;
+}
+.fm_space {
+  width: 100%;
+  height: 1.7rem;
+  background: #fff;
+}
