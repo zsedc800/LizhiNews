@@ -1,4 +1,4 @@
-app = angular.module('myLizhiNews', ['ngRoute'])
+app = angular.module('myLizhiNews', ['ngRoute', 'angularCSS'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/', {

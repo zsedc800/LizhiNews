@@ -4,36 +4,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
 	<title>荔枝新闻</title>
+	<link rel="stylesheet" type="text/css" href="css/glyphicons.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div ng-view></div>
 	<div class="tabBar">
-		<a href="#/">
-			<span></span>
+		<a class="tabBar-item" href="#/">
+			<span class="glyphicon glyphicon-globe"></span>
 			<p>新闻</p>
 		</a>
-		<a href="#/video">
-			<span></span>
+		<a class="tabBar-item" href="#/video">
+			<span class="glyphicon glyphicon-facetime-video"></span>
 			<p>视频</p>
 		</a>
-		<a href="#/fm">
-			<span></span>
+		<a class="tabBar-item" href="#/fm">
+			<span class="glyphicon glyphicon-headphones"></span>
 			<p>电台</p>
 		</a>
-		<a href="#/find">
-			<span></span>
+		<a class="tabBar-item" href="#/find">
+			<span class="glyphicon glyphicon-fire"></span>
 			<p>发现</p>
 		</a>
-		<a href="#mine">
-			<span></span>
+		<a class="tabBar-item" href="#mine">
+			<span class="glyphicon glyphicon-user"></span>
 			<p>我的</p>
 		</a>
 	</div>
 	<script type="text/javascript" src="lib/rem.js"></script>
 	<script type="text/javascript" src="lib/angular.min.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
+	<script type="text/javascript" src="lib/angular-css.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="script/filter/filters.js"></script>
+	<script type="text/javascript" src="script/factory/factories.js"></script>
 	<script type="text/javascript" src="script/controller/controllers.js"></script>
 	<!-- <script type="text/javascript" src="lib/require.js" data-main="main"></script> -->
 </body>
