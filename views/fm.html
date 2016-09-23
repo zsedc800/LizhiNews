@@ -14,10 +14,10 @@
 	</div>
 	<div class="fm_programaList">
 		<ul>
-			<li class="fm_programaList_news"><img src="./images/fm/02_03.png"/><p>新闻早高峰</p></li>
-			<li class="fm_programaList_sun"><img src="./images/fm/02_05.png"/><p>阳光倾城</p></li>
-			<li class="fm_programaList_man"><img src="./images/fm/02_09.png"/><p>男生宿舍</p></li>
-			<li class="fm_programaList_comment"><img src="./images/fm/02_10.png"/><p>新闻评弹</p></li>
+			<li class="fm_programaList_news"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216995741.shtml"><img src="./images/fm/02_03.png"/></a><p>新闻早高峰</p></li>
+			<li class="fm_programaList_sun"><a href="http://news.jstv.com/wap/radiopro/20160803/1470217039625.shtml"><img src="./images/fm/02_05.png"/></a><p>阳光倾城</p></li>
+			<li class="fm_programaList_man"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216790968.shtml"><img src="./images/fm/02_09.png"/></a><p>男生宿舍</p></li>
+			<li class="fm_programaList_comment"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216906432.shtml"><img src="./images/fm/02_10.png"/></a><p>新闻评弹</p></li>
 		</ul>
 	</div>
 	<div class="fm_programa">
@@ -30,7 +30,9 @@
 	<div class="fm_radio">
 		<ul class="fm_radio_ul"  ng-repeat="x in data.Data">
 			<li>
-				<img src=  "{{x.Photo}}" />
+				<a href="{{x.Href}}">
+					<img src=  "{{x.Photo}}" />
+				</a>
 				<p>{{x.Title}}</p>
 				<span>{{x.EpgName}}</span>
 			</li>
@@ -49,7 +51,9 @@
 	<div class="fm_programa_mPic">
 		<ul class="fm_programa_mUl" ng-repeat="x in dataProMore.Data">
 			<li>
-				<img src="{{x.Photo}}"/>
+				<a href="{{x.Href}}">
+					<img src="{{x.Photo}}"/>
+				</a>
 				<p>{{x.Title}}</p>
 			</li>
 		</ul>
@@ -63,7 +67,9 @@
 	<div class="fm_radiom_m">
 		<ul class="fm_radio_mUl"  ng-repeat="x in data.Data">
 			<li>
-				<img src=  "{{x.Photo}}" />
+				<a href="{{x.Href}}">
+					<img src=  "{{x.Photo}}" />
+				</a>
 				<p>{{x.Title}}</p>
 				<span>{{x.EpgName}}</span>
 			</li>

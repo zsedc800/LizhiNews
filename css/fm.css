@@ -91,9 +91,14 @@ img {
   width: 4.7361rem;
   height: 3.83rem;
 }
-.fm_main .fm_programaList ul li img {
+.fm_main .fm_programaList ul li a {
+  display: inline-block;
   width: 4.722rem;
   height: 2.96rem;
+}
+.fm_main .fm_programaList ul li a img {
+  width: 100%;
+  height: 100%;
 }
 .fm_main .fm_programaList ul li p {
   height: 0.83rem;
@@ -119,9 +124,14 @@ img {
   height: 3.185rem;
   margin: 0.148rem 0.05rem 0.05rem 0.3rem;
 }
-.fm_main .fm_radio .fm_radio_ul li img {
+.fm_main .fm_radio .fm_radio_ul li a {
+  display: inline-block;
   width: 2.194rem;
   height: 2.194rem;
+}
+.fm_main .fm_radio .fm_radio_ul li a img {
+  width: 100%;
+  height: 100%;
 }
 .fm_main .fm_radio .fm_radio_ul li p {
   overflow: hidden;
@@ -183,9 +193,14 @@ img {
   height: 3.83rem;
   padding: 0.352rem 0.206rem  0.28rem 0;
 }
-.fm_programa_more .fm_programa_mPic .fm_programa_mUl li img {
+.fm_programa_more .fm_programa_mPic .fm_programa_mUl li a {
+  display: inline-block;
   width: 100%;
   height: 2.94rem;
+}
+.fm_programa_more .fm_programa_mPic .fm_programa_mUl li a img {
+  width: 100%;
+  height: 100%;
 }
 .fm_programa_more .fm_programa_mPic .fm_programa_mUl li p {
   text-indent: 0.17rem;
@@ -233,9 +248,14 @@ img {
   height: 3.185rem;
   padding: 0.148rem 0.05rem 0.05rem 0.3rem;
 }
-.fm_radio_more .fm_radiom_m .fm_radio_mUl li img {
+.fm_radio_more .fm_radiom_m .fm_radio_mUl li a {
+  display: inline-block;
   width: 2.194rem;
   height: 2.194rem;
+}
+.fm_radio_more .fm_radiom_m .fm_radio_mUl li a img {
+  width: 100%;
+  height: 100%;
 }
 .fm_radio_more .fm_radiom_m .fm_radio_mUl li p {
   overflow: hidden;
