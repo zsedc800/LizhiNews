@@ -5,14 +5,18 @@
 	position: relative;
 }
 .tabBox .hd ul {
+	width: 100%;
 	position: absolute;
 	height: 1.375rem;
 	top: 0;
 	overflow: hidden;
 }
 .tabBox .hd ul li {
+	box-sizing: border-box;
+	text-align: center;
+	width: 2.5rem;
 	float: left;
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 	color: #666;
 	border: 1px solid transparent;
 }
@@ -35,7 +39,7 @@
 #container{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow: scroll;
 }
 .video{
 	width: 100%;

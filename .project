@@ -6,14 +6,11 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-<<<<<<< HEAD
-=======
 			<name>com.aptana.editor.php.aptanaPhpBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
->>>>>>> a1c474b348d60caa1c8b47050896e93539298aae
 			<name>com.aptana.ide.core.unifiedBuilder</name>
 			<arguments>
 			</arguments>
@@ -21,14 +18,11 @@
 	</buildSpec>
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
-<<<<<<< HEAD
-	</natures>
-=======
 		<nature>com.aptana.editor.php.phpNature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1474516885097</id>
+			<id>1474591755907</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -37,5 +31,4 @@
 			</matcher>
 		</filter>
 	</filteredResources>
->>>>>>> a1c474b348d60caa1c8b47050896e93539298aae
 </projectDescription>
