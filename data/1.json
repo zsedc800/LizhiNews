@@ -1,0 +1,296 @@
+{
+    "Data": {
+        "Banner": null,
+        "List": [
+            {
+                "ArticleType": 7,
+                "Data": {
+                    "GlobalID": 3554191,
+                    "Title": " 习近平文化建设的“六个一”",
+                    "Summary": "国家副主席李源潮在大会开幕式上宣读了习近平的贺信。",
+                    "MyType": "小图",
+                    "Photo": "http://static.jstv.com/img/2016/6/12/20166121465688387232_14508.jpg",
+                    "PhotoWidth": 0,
+                    "PhotoHeight": 0,
+                    "SpecialID": 17025,
+                    "Href": "http://news.jstv.com/wap/special/zhiguolizhengjinxingshi/index.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/6/12/20166121465688387232_14508.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31190200,
+                    "Source": "时政"
+                },
+                "LikeCount": 2
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567759,
+                    "Title": "李强石泰峰分别会见澳大利亚维多利亚州州长",
+                    "Summary": "江苏与维州可以在更多更广领域开展合作交流，成为友好省州样板。",
+                    "SubTitle": "李强石泰峰会见澳大利亚客人",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474540125714_15024.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 125,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474535004330.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474540125714_15024.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31189438,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 421
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567635,
+                    "Title": "农业部暂停“转基因检测中心”工作 限期整改",
+                    "Summary": "材料准备、档案整理、人员聘用等方面存在违规行为。",
+                    "SubTitle": "农业部暂停转基因检测中心工作",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474538913950_15000.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 125,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474538917110.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474538913950_15000.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31188675,
+                    "Source": "中国新闻网"
+                },
+                "LikeCount": 456
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567758,
+                    "Title": "戴源任盐城市代市长 王荣平辞去市长职务",
+                    "Summary": "任命戴源同志为盐城市人民政府副市长、代理市长。",
+                    "SubTitle": "戴源任盐城市代市长",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474541067027_15024.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 125,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474540991181.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474541067027_15024.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31185625,
+                    "Source": "新华报业网"
+                },
+                "LikeCount": 248
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567792,
+                    "Title": "南京土地四日网拍收官 国土局预计进账近600亿",
+                    "Summary": "20幅住宅地块达最高限价，将以摇号的方式产生最终竞得者。",
+                    "SubTitle": "南京土地四日网拍将进账近600亿",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474539226728_15024.jpg",
+                    "PhotoWidth": 480,
+                    "PhotoHeight": 379,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474539260955.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474539226728_15024.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31172188,
+                    "Source": "江苏广电新闻中心"
+                },
+                "LikeCount": 226
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567742,
+                    "Title": "荔枝派：修长城是个技术活儿",
+                    "Summary": "长城不是你想修，想修就能修，不想我黑你，快来夸我美！",
+                    "SubTitle": "荔枝派：修长城是个技术活儿",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474540718270_15025.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 125,
+                    "Footer": "独家",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474539849632.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474540718270_15025.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31158750,
+                    "Source": "荔枝网"
+                },
+                "LikeCount": 453
+            },
+            {
+                "ArticleType": 8,
+                "Data": {
+                    "GlobalID": 3559979,
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474509766167_14507.jpg",
+                    "Title": "江苏广电主持人“金荔枝”奖投票开始啦！",
+                    "Href": "http://news.jstv.com/jlz",
+                    "MyType": "大图",
+                    "Summary": "每人每天可投三次，每次不超过20人。",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/20/20169201474335460446_14639.JPG",
+                    "OtherPhotoWidth": 580,
+                    "OtherPhotoHeight": 180,
+                    "OrderIndex": 31156600,
+                    "Footer": "活动",
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 78
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3567270,
+                    "Title": "虽然我没生儿子，你也不能来抢财产|荔枝时评",
+                    "Summary": "中国家庭当中的大部分糊涂账，都来自于财产权的混乱。",
+                    "SubTitle": "我没生儿子，你也不能来抢财产",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474532230150_15025.jpg",
+                    "PhotoWidth": 430,
+                    "PhotoHeight": 320,
+                    "Footer": "独家",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474532239770.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474532230150_15025.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31156422,
+                    "Source": "荔枝网"
+                },
+                "LikeCount": 523
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3566505,
+                    "Title": "荔枝说：秋天的味道！舌尖上的秋分日",
+                    "Summary": "秋天要有秋天的味道，舌尖上的秋分，跟荔枝小编一起来看看吧。",
+                    "SubTitle": "秋天的味道！舌尖上的秋分日",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/21/20169211474448994814_15025.jpg",
+                    "PhotoWidth": 0,
+                    "PhotoHeight": 0,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160922/1474515929706.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/21/20169211474448994814_15025.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31156244,
+                    "Source": "荔枝网"
+                },
+                "LikeCount": 550
+            },
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3566527,
+                    "Title": "积分落户替代购房落户！南京户籍新政征求意见",
+                    "Summary": "新的户籍准入管理办法中，取消了单纯的购房落户。",
+                    "SubTitle": "南京拟积分落户替代购房落户",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474517791130_15024.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 125,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "有投票",
+                    "Href": "http://news.jstv.com/a/20160922/1474517853807.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474517791130_15024.jpg",
+                    "OtherPhotoWidth": 180,
+                    "OtherPhotoHeight": 125,
+                    "OrderIndex": 31156230,
+                    "Source": "现代快报"
+                },
+                "LikeCount": 460
+            }
+        ],
+        "HeadPics": [
+            {
+                "ArticleType": 10,
+                "Data": {
+                    "GlobalID": 3565176,
+                    "Title": " 联通重磅引领4G+“无限流” 50000张预约名额全部售罄",
+                    "Summary": " 联通重磅引领4G+“无限流” 50000张预约名额全部售罄",
+                    "SubTitle": "联通引领4G+“无限流” 50000张预约名额全售罄",
+                    "MyType": "小图+标题+描述",
+                    "Photo": "http://static.jstv.com/img/2016/9/21/20169211474451597615_15006.png",
+                    "PhotoWidth": 439,
+                    "PhotoHeight": 235,
+                    "Footer": "",
+                    "HaveVideo": "",
+                    "HaveVote": "",
+                    "Href": "http://news.jstv.com/a/20160921/1474451635509.shtml",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474499540045_14723.jpg",
+                    "OtherPhotoWidth": 640,
+                    "OtherPhotoHeight": 370,
+                    "OrderIndex": 31157100,
+                    "Source": "荔枝网"
+                },
+                "LikeCount": 615
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3567559,
+                    "MyType": "1大2小3张图",
+                    "Title": "罕见！镇江村民捕获12.5斤重娃娃鱼 主动上交",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474537328767_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/22/20169221474537332429_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/22/20169221474537335580_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160922/1474537336212.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474537714460_14723.jpg",
+                    "OtherPhotoWidth": 640,
+                    "OtherPhotoHeight": 370,
+                    "OrderIndex": 31151365,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 81
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3566957,
+                    "MyType": "1大2小3张图",
+                    "Title": "无锡现“波浪钻石楼”：远观如波浪 近看似钻石",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474525165562_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/22/20169221474525169962_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/22/20169221474525173941_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160922/1474525062331.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474527595118_14723.jpg",
+                    "OtherPhotoWidth": 640,
+                    "OtherPhotoHeight": 370,
+                    "OrderIndex": 31145630,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 57
+            }
+        ]
+    },
+    "ResultCode": 0,
+    "Message": "获取成功"
+}

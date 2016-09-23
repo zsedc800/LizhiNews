@@ -1,0 +1,150 @@
+.homePage{
+	width: 100%;
+	position: relative;
+	background-color: white;
+}
+
+.homePage .box:before{
+	content: '.';
+	display: block;
+	width: 100%;
+	height: 1.2rem;
+}
+
+.homePage .box{
+	width: 10rem;
+	overflow: hidden;
+}
+.homePage .title{
+	width: 100%;
+	overflow: hidden;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	letter-spacing: -20px;
+	background-color: #dfdfdf;
+	z-index: 3;
+}
+
+.title .title-wrapper{
+	
+}
+.title .title-item{
+	letter-spacing: 0;
+	font-size: .45rem;
+	padding: 0 .3rem;
+}
+
+
+.homePage .tapContainer{
+	width: 210rem;
+	overflow: hidden;	
+}
+
+.tapContainer .pageview{
+	width: 10rem;
+	overflow: hidden;
+}
+.headPics{
+	width: 10rem;
+
+}
+.headPics .imgWrapper{
+	width: 30rem;
+}
+.imgWrapper img{
+	width: 10rem;
+	height: 5.35rem;
+}
+.pageview .list-item{
+	box-sizing: border-box;
+	padding: .25rem;
+	width: 10rem;
+	border-bottom: 1px solid #f2f2f2;
+}
+.pageview .sm-pic-desc{
+	text-align: justify;
+	width: 100%;
+	line-height: 0;
+	position: relative;
+}
+.sm-pic-desc:after{
+	content: '.';
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.sm-pic-desc img{
+	width: 35%;
+	height: 2.6rem;
+}
+.sm-pic-desc .play{
+	border-radius: 50%;
+	width: .5rem;
+	height: .5rem;
+	background:rgba(0,0,0,0.4);
+	position: absolute;
+	bottom: .2rem;
+	left: .2rem;
+	text-align: center;
+	line-height: .5rem;
+}
+.sm-pic-desc .desc{
+	width: 60%;
+	display: inline-block;
+	height: 2.6rem;
+	vertical-align: top;
+	position: relative;
+	line-height: .5rem;
+}
+
+.desc p{
+	color: #333;
+	font-weight: bold;
+}
+.desc .source{
+	position: absolute;
+	margin-top: 1rem;
+	bottom: 0;
+	left: 0;
+	color: #878787;
+}
+
+.pageview .banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.pageview .big-imgDiv{
+	width: 100%;
+}
+.big-imgDiv img{
+	width: 100%;
+	border-image: none;
+		margin-top: 0.225rem;
+}
+.big-imgDiv .active{
+	border: 1px solid #DE4D43;
+	border-radius: 3px;
+	color: #DE4D43;
+	font-size: 0.2rem;
+	padding:0 0.18rem;
+
+}
+.font-normal{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	color: #363636;
+	font-size: 0.4rem;
+	margin-left: 0.18rem;
+}
+.big-imgDiv p{
+	color: #999999;
+	line-height: .6rem;
+}
