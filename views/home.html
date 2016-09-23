@@ -1,40 +1,607 @@
 <div class="homePage">
 	<div class="box">
 		<div class="title">
+			<div class="title-wrapper">
+				<span class="title-item" ng-click="showPage(x)" ng-repeat="x in titleList">
+					{{x}}
+				</span>
+			</div>
+		</div>
+		<div class="tapContainer">
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview">
+				<div class="banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+
+						
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="pageview"></div> -->
+			<!-- <div class="pageview"></div> -->
+			<div class="pageview">
+				<div class="banner" ng-if="page1.Data.Banner">
+					<img ng-src="{{page1.Data.Banner.Photo}}">
+				</div>
+				<div class="headPics">
+					<div class="imgWrapper">
+						<img ng-repeat="x in page1.Data.HeadPics"
+						 ng-src="{{x.Data.Photo}}">
+					</div>
+					<div class="list-item" ng-repeat="x in page1.Data.List">
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 1 || x.myType == 2">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>{{x.Data.Title}}</p>
+								<span class="source">{{x.Data.Source}}</span>
+								<span class="Foot" ng-if="x.Data.Footer">{{x.Data.Footer}}</span>
+							</div>
+							<span class="play glyphicon glyphicon-play" ng-if="x.Data.HaveVideo"></span>
+
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==3">
+							<section>
+								<span class="active">{{x.Data.Footer}}</span>
+								<h4 class="font-normal">{{x.Data.Title}}</h4>
+							</section>
+							<img class="bigImg" ng-src="{{x.Data.Photo}}" />
+							<p>{{x.Data.Summary}}</p>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==4">
+							<div class="Photo-bigImg">
+								<img ng-src="{{x.Data.Photo}}"/>
+							</div>
+							<div class="Photo-right">
+								<img ng-src="{{x.Data.Photo_s1}}"/>
+								<img ng-src="{{x.Data.Photo_s2}}"/>
+							</div>
+							<div class="info-brief"><p class="brief-desc">{{x.Data.Title}}</p>
+							<span class="icon-pic glyphicon glyphicon-picture"></span>
+							</div>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType==5">
+							<div class="Photo-bigImg">
+								<img ng-src="{{x.Data.Photo}}"/>
+							</div>
+							<div class="info-brief"><p class="brief-desc">{{x.Data.Title}}</p>
+							<span class="icon-pic glyphicon glyphicon-picture"></span>
+							</div>
+						</div>
+						<div class="{{x.Data.Class}}" ng-if="x.myType == 6">
+							<img ng-src="{{x.Data.Photo}}">
+							<div class="desc">
+								<p>谣言: {{x.Data.Title}}</p>
+								<p><span class="active">真相</span>: {{x.Data.SubTitle}}</p>
+							</div>
+
+						</div>
+						<div class="{{x.D}}"></div>
+					</div>
+				</div>
+			</div>
 			
-			
-			<div class="zhuanti-wrap">
-				<button ng-click='FN()'>sss</button>
-			 	<div class="zhuanti-content1">
-			 		<p></p>
-			 	</div>
-			 	<div class="wrap-24">
-			 		<div class="zhuanti-content2">
-				 		<p></p>
-				 	</div>
-				 	<div class="zhuanti-content4">
-				 		<p></p>
-				 	</div>
-			 	</div>
-			 	<div class="wrap-35">
-			 		<div class="zhuanti-content3">
-				 		<p></p>
-				 	</div>
-				 	<div class="zhuanti-content5">
-				 		<p></p>
-				 	</div>
-			 	</div>
-			 	<div class="zhuanti-content6">
-			 		<p></p>
-			 	</div>
-		 	</div>
-			
-			
-			
-			
-			
-			
+		
 		</div>
 	</div>
 	
+
 </div>
