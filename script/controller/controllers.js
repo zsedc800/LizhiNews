@@ -7,7 +7,7 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 	}
 	var index = 1;
 	$css.add('css/home.css');
-	pageLoad.getPage('data/2.json', $scope);
+	pageLoad.getPage('data/4.json', $scope);
 
 }])
 
