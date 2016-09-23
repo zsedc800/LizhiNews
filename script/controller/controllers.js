@@ -1,6 +1,7 @@
-app.controller('homeCtrl', function ($scope, $css) {
+app.controller('homeCtrl', function ($scope, $css,randServer) {
 	$scope.data = 'home';
 	$css.add('css/home.css');
+	$scope.FN = randServer.randFn;
 })
 
 .controller('videoCtrl', function ($scope, $css) {
