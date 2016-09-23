@@ -9,22 +9,22 @@
 		<h5>
 			<span class="fm_programa_left"></span>
 			<span class="fm_programa_writ">栏目推荐</span>
-			<a href="javascript:;" ng-click="proAlGoto()"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
+			<a href="javascript:;" ng-click="proAlGoto1()"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
 		</h5>
 	</div>
 	<div class="fm_programaList">
 		<ul>
-			<li class="fm_programaList_news"><img src="./img/02_03.png"/><p>新闻早高峰</p></li>
-			<li class="fm_programaList_sun"><img src="./img/02_05.png"/><p>阳光倾城</p></li>
-			<li class="fm_programaList_man"><img src="./img/02_09.png"/><p>男生宿舍</p></li>
-			<li class="fm_programaList_comment"><img src="./img/02_10.png"/><p>新闻评弹</p></li>
+			<li class="fm_programaList_news"><img src="./images/fm/02_03.png"/><p>新闻早高峰</p></li>
+			<li class="fm_programaList_sun"><img src="./images/fm/02_05.png"/><p>阳光倾城</p></li>
+			<li class="fm_programaList_man"><img src="./images/fm/02_09.png"/><p>男生宿舍</p></li>
+			<li class="fm_programaList_comment"><img src="./images/fm/02_10.png"/><p>新闻评弹</p></li>
 		</ul>
 	</div>
 	<div class="fm_programa">
 		<h5>
 			<span class="fm_programa_left"></span>
 			<span class="fm_programa_writ">直播电台</span>
-			<a href="javascript:;"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
+			<a href="javascript:;" ng-click="proWriGoto()" class=""><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
 		</h5>
 	</div>
 	<div class="fm_radio">
@@ -44,7 +44,7 @@
 <!--栏目推荐更多页面-->
 <div class="fm_programa_more">
 	<div class="fm_programa_mH5">
-		<h5><span class="fm_programa_back"><</span>栏目推荐</h5>
+		<h5><span class="fm_programa_back" ng-click="proBack()"><</span>栏目推荐</h5>
 	</div>
 	<div class="fm_programa_mPic">
 		<ul class="fm_programa_mUl" ng-repeat="x in dataProMore.Data">
@@ -58,7 +58,7 @@
 <!--直播电台更多页面-->
 <div class="fm_radio_more">
 	<div class="fm_radio_mH5">
-		<h5><span class="fm_programa_back"><</span>直播电台</h5>
+		<h5><span class="fm_programa_back" ng-click="proBack()"><</span>直播电台</h5>
 	</div>
 	<div class="fm_radiom_m">
 		<ul class="fm_radio_mUl"  ng-repeat="x in data.Data">

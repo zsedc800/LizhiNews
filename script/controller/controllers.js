@@ -1,7 +1,15 @@
-app.controller('homeCtrl', function ($scope, $css) {
-	$scope.data = 'home';
+app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css, pageLoad) {
+	if (!($scope.titleList = JSON.parse(localStorage.getItem("titleList")))) {
+		$scope.titleList = ['头条', '在现场', '江苏卫视', '荔枝锐评',
+		'原创', '图集', '娱乐', '专题', '荔枝派', '社会', '财经', '体育', '汽车', '科技', '房产',
+		'军事', '监督', '真相帝', '江苏', '国际', '国内'];
+		localStorage.setItem("titleList", JSON.stringify($scope.titleList));
+	}
+	var index = 1;
 	$css.add('css/home.css');
-})
+	pageLoad.getPage('data/4.json', $scope);
+
+}])
 
 .controller('videoCtrl', function ($scope, $css) {
 		$scope.data = 'video';
@@ -13,6 +21,9 @@ app.controller('homeCtrl', function ($scope, $css) {
 		$scope.dataProMore = {"Data":[{"Title":"交广晚班车","GlobalID":3417474,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216446903_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216462688.shtml"},{"Title":"城市乐游","GlobalID":3417451,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216141969_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216171468.shtml"},{"Title":"滴滴叭叭早上好","GlobalID":3417456,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216190859_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216211486.shtml"},{"Title":"法治在线","GlobalID":3417459,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216225975_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216236747.shtml"},{"Title":" 飞一般音乐","GlobalID":3417461,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216254917_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/147021627476.shtml"},{"Title":"即时资讯","GlobalID":3417465,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216289982_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216306527.shtml"},{"Title":"健康总动员","GlobalID":3417467,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216322295_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216336721.shtml"},{"Title":"江苏新闻联播","GlobalID":3417469,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216377751_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216390258.shtml"},{"Title":"交广早班车","GlobalID":3417482,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216473001_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216656650.shtml"},{"Title":"蓝色音乐田","GlobalID":3417487,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216669110_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216685915.shtml"},{"Title":"名医坐堂","GlobalID":3417489,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216696859_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/147021676384.shtml"},{"Title":"男生宿舍","GlobalID":3417491,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216778423_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216790968.shtml"},{"Title":"天下体坛","GlobalID":3417493,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216827779_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216840130.shtml"},{"Title":"新闻故事","GlobalID":3417497,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216854016_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216868966.shtml"},{"Title":"新闻评弹","GlobalID":3417503,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216891170_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216906432.shtml"},{"Title":"新闻晚高峰","GlobalID":3417507,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216919674_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216969150.shtml"},{"Title":"新闻早高峰","GlobalID":3417511,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470216987282_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470216995741.shtml"},{"Title":"阳光倾城","GlobalID":3417515,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470217009277_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470217039625.shtml"},{"Title":"音乐fun不停","GlobalID":3417518,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470217053402_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470217068530.shtml"},{"Title":"政风热线","GlobalID":3417531,"Summary":"","Photo":"http://static.jstv.com/img/2016/8/3/2016831470217090740_19766.jpg","Href":"http://news.jstv.com/wap/radiopro/20160803/1470217144685.shtml"}],"ResultCode":0,"Message":"获取成功"};
 		$css.add('css/fm.css');
 		FmController.show();
+		$scope.proAlGoto1 = FmController.proAlGoto;
+		$scope.proBack = FmController.proBack;
+		$scope.proWriGoto = FmController.proWriGoto;
 	})
 	.controller('mineCtrl', function ($scope, $css) {
 		$scope.data = 'mine';

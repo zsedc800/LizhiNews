@@ -3,7 +3,6 @@ img {
 }
 .fm_main {
   width: 100%;
-  display: none;
 }
 .fm_main .fm_head {
   width: 100%;
@@ -23,7 +22,7 @@ img {
   display: inline-block;
   width: 0.53rem;
   height: 0.53rem;
-  background: url(../img/01_03.png) no-repeat;
+  background: url(../images/fm/01_03.png) no-repeat;
   background-size: 100% ;
   vertical-align: middle;
 }
@@ -35,7 +34,7 @@ img {
 .fm_main .fm_log {
   width: 100%;
   height: 2.78rem;
-  background: url(../img/01_06.png) no-repeat;
+  background: url(../images/fm/01_06.png) no-repeat;
   background-size: 100% ;
 }
 .fm_main .fm_programa {
@@ -58,7 +57,7 @@ img {
 .fm_main .fm_programa h5 .fm_programa_left {
   width: 0.056rem;
   height: 0.528rem;
-  background: url(../img/01_09.png) no-repeat;
+  background: url(../images/fm/01_09.png) no-repeat;
   background-size: 100% ;
   margin-left: 0.278rem;
 }
@@ -193,6 +192,7 @@ img {
   padding-top: 0.25rem;
 }
 .fm_radio_more {
+  display: none;
   width: 100%;
   background: #fff;
   z-index: 1;
