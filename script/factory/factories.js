@@ -1,3 +1,43 @@
+
+app.factory("FmController",function(){
+	var factory = {};
+	
+	var programaMore = document.getElementsByClassName("fm_programa_more")[0];
+	var fmRadioMore = document.getElementsByClassName("fm_radio_more")[0];
+	var fmMain = document.getElementsByClassName("fm_main")[0];
+	var tabBar = document.getElementsByClassName("tabBar")[0];
+	
+	factory.show = function(){
+		fmRadioMore.style.height = window.screen.height + "px";
+	};
+	
+	factory.proAlGoto = function(){
+		//栏目推荐更多页面
+		fmMain.style.display = "none";
+		programaMore.style.display = "block";
+		tabBar.style.display = "none";
+		fmRadioMore.style.display = "none";
+	}
+	
+	factory.proWriGoto = function(){
+		//直播电台更多页面
+		fmMain.style.display = "none";
+		fmRadioMore.style.display = "block";
+		tabBar.style.display = "none";	
+		programaMore.style.display = "none";
+	}
+	
+	factory.proBack = function(){
+		//点击返回按钮返回到fm主页面
+		fmMain.style.display = "block";
+		programaMore.style.display = "none";
+		tabBar.style.display = "block";	
+		fmRadioMore.style.display = "none";
+	}
+	
+	return factory;
+})
+
 app.factory('pageLoad', ['$http', function ($http) {
 	function getPage(url, scope) {
 		$http.get(url).success(function (res) {
@@ -75,3 +115,4 @@ app.service('pageLoad1', ['$http', function ($http) {
 
 	this.getData = getData;
 }]);
+

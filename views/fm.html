@@ -1,40 +1,78 @@
-<div class="fm_head">
-	<h2><span class="fm_head_span"></span><span class="fm_head_span2">荔枝新闻</span></h2>
+<div class="fm_main">
+	<div class="fm_head">
+		<h2><span class="fm_head_span"></span><span class="fm_head_span2">荔枝新闻</span></h2>
+	</div>
+	<div class="fm_log">
+		
+	</div>
+	<div class="fm_programa">
+		<h5>
+			<span class="fm_programa_left"></span>
+			<span class="fm_programa_writ">栏目推荐</span>
+			<a href="javascript:;" ng-click="proAlGoto1()"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
+		</h5>
+	</div>
+	<div class="fm_programaList">
+		<ul>
+			<li class="fm_programaList_news"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216995741.shtml"><img src="./images/fm/02_03.png"/></a><p>新闻早高峰</p></li>
+			<li class="fm_programaList_sun"><a href="http://news.jstv.com/wap/radiopro/20160803/1470217039625.shtml"><img src="./images/fm/02_05.png"/></a><p>阳光倾城</p></li>
+			<li class="fm_programaList_man"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216790968.shtml"><img src="./images/fm/02_09.png"/></a><p>男生宿舍</p></li>
+			<li class="fm_programaList_comment"><a href="http://news.jstv.com/wap/radiopro/20160803/1470216906432.shtml"><img src="./images/fm/02_10.png"/></a><p>新闻评弹</p></li>
+		</ul>
+	</div>
+	<div class="fm_programa">
+		<h5>
+			<span class="fm_programa_left"></span>
+			<span class="fm_programa_writ">直播电台</span>
+			<a href="javascript:;" ng-click="proWriGoto()" class=""><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
+		</h5>
+	</div>
+	<div class="fm_radio">
+		<ul class="fm_radio_ul"  ng-repeat="x in data.Data">
+			<li>
+				<a href="{{x.Href}}">
+					<img src=  "{{x.Photo}}" />
+				</a>
+				<p>{{x.Title}}</p>
+				<span>{{x.EpgName}}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="fm_space">
+		
+	</div>
 </div>
-<div class="fm_log">
-	
+
+<!--栏目推荐更多页面-->
+<div class="fm_programa_more">
+	<div class="fm_programa_mH5">
+		<h5><span class="fm_programa_back" ng-click="proBack()"><</span>栏目推荐</h5>
+	</div>
+	<div class="fm_programa_mPic">
+		<ul class="fm_programa_mUl" ng-repeat="x in dataProMore.Data">
+			<li>
+				<a href="{{x.Href}}">
+					<img src="{{x.Photo}}"/>
+				</a>
+				<p>{{x.Title}}</p>
+			</li>
+		</ul>
+	</div>
 </div>
-<div class="fm_programa">
-	<h5>
-		<span class="fm_programa_left"></span>
-		<span class="fm_programa_writ">栏目推荐</span>
-		<a href="#/"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
-	</h5>
-</div>
-<div class="fm_programaList">
-	<ul>
-		<li class="fm_programaList_news"><img src="./img/02_03.png"/><p>新闻早高峰</p></li>
-		<li class="fm_programaList_sun"><img src="./img/02_05.png"/><p>阳光倾城</p></li>
-		<li class="fm_programaList_man"><img src="./img/02_09.png"/><p>男生宿舍</p></li>
-		<li class="fm_programaList_comment"><img src="./img/02_10.png"/><p>新闻评弹</p></li>
-	</ul>
-</div>
-<div class="fm_programa">
-	<h5>
-		<span class="fm_programa_left"></span>
-		<span class="fm_programa_writ">直播电台</span>
-		<a href="#/"><span class="fm_programa_al">更多</span><span class="fm_programa_ar">></span></a>
-	</h5>
-</div>
-<div class="fm_radio">
-	<ul class="fm_radio_ul"  ng-repeat="x in data.Data">
-		<li>
-			<img src=  {{x.Photo}} />
-			<p>{{x.Title}}</p>
-			<span>{{x.EpgName}}</span>
-		</li>
-	</ul>
-</div>
-<div class="fm_space">
-	
+<!--直播电台更多页面-->
+<div class="fm_radio_more">
+	<div class="fm_radio_mH5">
+		<h5><span class="fm_programa_back" ng-click="proBack()"><</span>直播电台</h5>
+	</div>
+	<div class="fm_radiom_m">
+		<ul class="fm_radio_mUl"  ng-repeat="x in data.Data">
+			<li>
+				<a href="{{x.Href}}">
+					<img src=  "{{x.Photo}}" />
+				</a>
+				<p>{{x.Title}}</p>
+				<span>{{x.EpgName}}</span>
+			</li>
+		</ul>
+	</div>
 </div>
