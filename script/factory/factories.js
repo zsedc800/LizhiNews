@@ -2,37 +2,38 @@
 app.factory("FmController",function(){
 	var factory = {};
 	
-	var programaMore = document.getElementsByClassName("fm_programa_more")[0];
+	var text1 = {};
+	
 	var fmRadioMore = document.getElementsByClassName("fm_radio_more")[0];
-	var fmMain = document.getElementsByClassName("fm_main")[0];
-	var tabBar = document.getElementsByClassName("tabBar")[0];
 	
 	factory.show = function(){
 		fmRadioMore.style.height = window.screen.height + "px";
 	};
 	
+	factory.getScope = function(a){
+		text1 = a;
+	}
+	
 	factory.proAlGoto = function(){
 		//栏目推荐更多页面
-		fmMain.style.display = "none";
-		programaMore.style.display = "block";
-		tabBar.style.display = "none";
-		fmRadioMore.style.display = "none";
+		text1.togMain = true;
+		text1.togProMore = false;
+		text1.togRadMore = true;
 	}
 	
 	factory.proWriGoto = function(){
 		//直播电台更多页面
-		fmMain.style.display = "none";
-		fmRadioMore.style.display = "block";
-		tabBar.style.display = "none";	
-		programaMore.style.display = "none";
+		text1.togMain = true;
+		text1.togProMore = true;
+		text1.togRadMore = false;
+		fmRadioMore.style.height = window.screen.height + "px";
 	}
 	
 	factory.proBack = function(){
 		//点击返回按钮返回到fm主页面
-		fmMain.style.display = "block";
-		programaMore.style.display = "none";
-		tabBar.style.display = "block";	
-		fmRadioMore.style.display = "none";
+		text1.togMain = false;
+		text1.togProMore = true;
+		text1.togRadMore = true;
 	}
 	
 	return factory;
