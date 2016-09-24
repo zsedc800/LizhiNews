@@ -1,0 +1,210 @@
+{
+    "Data": {
+        "Banner": null,
+        "List": [
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3569331,
+                    "MyType": "1大2小3张图",
+                    "Title": "上海：同卵四胞胎姐妹平安出院",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474600646359_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/23/20169231474600652097_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/23/20169231474600655929_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474600659157.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474600646359_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31221100,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 296
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3569330,
+                    "MyType": "1张大图",
+                    "Title": "2016年搞笑诺贝尔奖在美国举行颁奖仪式 男子戴假肢扮山羊领奖",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474600356514_14505.jpg",
+                    "PhotoWidth": 600,
+                    "PhotoHeight": 300,
+                    "Photo_s1": "",
+                    "Photo_s2": "",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474600358868.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474600356514_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31221000,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 87
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568714,
+                    "MyType": "1大2小3张图",
+                    "Title": "上海老伯34年只做葱油饼 “阿大葱油饼”惊动BBC",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474593993766_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/23/20169231474593997886_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/23/20169231474594001713_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474593914305.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474593993766_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31211000,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 575
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568320,
+                    "MyType": "1张大图",
+                    "Title": "美国大选进入白热化期 盘点应运而生的商业经济",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474588582598_14505.jpg",
+                    "PhotoWidth": 600,
+                    "PhotoHeight": 300,
+                    "Photo_s1": "",
+                    "Photo_s2": "",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474588585535.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474588582598_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31206900,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 458
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568319,
+                    "MyType": "1大2小3张图",
+                    "Title": "河南睢县校车事故后续 2幼儿遇难11伤",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474588191388_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/23/20169231474588196201_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/23/20169231474588200207_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474588206886.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474588191388_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31206800,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 89
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568318,
+                    "MyType": "1张大图",
+                    "Title": "南京：中华遗嘱库江苏分库正式启动 接待大厅人头攒动",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474587989779_14505.jpg",
+                    "PhotoWidth": 600,
+                    "PhotoHeight": 300,
+                    "Photo_s1": "",
+                    "Photo_s2": "",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474587991332.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474587989779_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31206700,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 8
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568317,
+                    "MyType": "1大2小3张图",
+                    "Title": "长沙：流浪汉活得有尊严 衣物被子叠成“豆腐块”",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474587811957_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/23/20169231474587816967_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/23/20169231474587820807_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474587825190.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474587811957_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31206600,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 354
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3568316,
+                    "MyType": "1张大图",
+                    "Title": "河南驻马店：男婴手脚反向生长 姥姥盼能将孩子治好",
+                    "Photo": "http://static.jstv.com/img/2016/9/23/20169231474587664546_14505.jpg",
+                    "PhotoWidth": 600,
+                    "PhotoHeight": 300,
+                    "Photo_s1": "",
+                    "Photo_s2": "",
+                    "Href": "http://news.jstv.com/wap/photo/20160923/1474587666320.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/23/20169231474587664546_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31206500,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 445
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3567606,
+                    "MyType": "1大2小3张图",
+                    "Title": "女子当众哺乳受父母指责 晒哺乳照回击",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474537787379_14505.jpg",
+                    "PhotoWidth": 180,
+                    "PhotoHeight": 140,
+                    "Photo_s1": "http://static.jstv.com/img/2016/9/22/20169221474537791517_14505.jpg",
+                    "Photo_s2": "http://static.jstv.com/img/2016/9/22/20169221474537796429_14505.jpg",
+                    "Href": "http://news.jstv.com/wap/photo/20160922/1474537799343.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474537787379_14505.jpg",
+                    "OtherPhotoWidth": 0,
+                    "OtherPhotoHeight": 0,
+                    "OrderIndex": 31192900,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 191
+            },
+            {
+                "ArticleType": 1,
+                "Data": {
+                    "GlobalID": 3567604,
+                    "MyType": "1张大图",
+                    "Title": "常州不动产登记中心被挤爆 大叔边挂水边过户",
+                    "Photo": "http://static.jstv.com/img/2016/9/22/20169221474537960249_14505.jpg",
+                    "PhotoWidth": 600,
+                    "PhotoHeight": 300,
+                    "Photo_s1": "",
+                    "Photo_s2": "",
+                    "Href": "http://news.jstv.com/wap/photo/20160922/1474537961664.html",
+                    "OtherPhoto": "http://static.jstv.com/img/2016/9/22/20169221474537960249_14505.jpg",
+                    "OtherPhotoWidth": 600,
+                    "OtherPhotoHeight": 300,
+                    "OrderIndex": 31192800,
+                    "Source": "荔枝新闻"
+                },
+                "LikeCount": 233
+            }
+        ],
+        "HeadPics": []
+    },
+    "ResultCode": 0,
+    "Message": "获取成功"
+}

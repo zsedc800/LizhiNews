@@ -1,4 +1,38 @@
 
+// app.factory('randServer',function(){
+// 	var rand = {};
+	
+// 	rand.randFn = function(){
+// 		var randWidth = parseFloat(Math.random()*(97.4-28)+28);
+// 		var randHeight = parseFloat(Math.random()*(8.3-2.5)+2.5);
+// 		console.log(randWidth,randHeight);
+// 		var w = parseFloat(randWidth + '%');console.log(w);console.log(typeof w);
+// 		document.getElementsByClassName('zhuanti-content2').style.width = w;
+// 		document.getElementsByClassName('zhuanti-content3').style.width = parseFloat(97.4-randWidth + '%');
+// 	}
+	
+	
+	
+// 	return rand;
+// })
+
+//videoService----视频页面的factory
+app.factory('videoService',function($timeout){
+	var factory = {};
+	//TouchSlide初始化
+	fn = function(){
+		TouchSlide({
+			slideCell: "#leftTabBox",
+			effect: "leftLoop"
+		});
+	}
+	factory.load = function(){
+		$timeout( fn, 0, false );
+	}
+	return factory;
+})
+
+
 app.factory("FmController",function(){
 	var factory = {};
 	
@@ -50,8 +84,11 @@ app.factory('pageLoad', ['$http', function ($http) {
 		var list = res.Data.List,
 			i = 0,
 			len = list.length;
-		console.log(list);
 		for (i = 0; i < len; i++) {
+			if (list[i].ArticleType === 16) {
+				list[i].myType = 6;
+				list[i].Data.Class = 'realWorld';
+			}
 			switch (list[i].Data.MyType) {
 			case '小图+标题+描述':
 				{
@@ -71,6 +108,18 @@ app.factory('pageLoad', ['$http', function ($http) {
 					list[i].myType = 3;
 					break;
 				}
+			case '1大2小3张图':
+				{
+					list[i].Data.Class = 'three-imgDiv';
+					list[i].myType = 4;
+					break;
+				}
+			case '1张大图':
+				{
+					list[i].Data.Class = 'one-imgDiv';
+					list[i].myType = 5;
+					break;
+				}
 			default:
 				break;
 			}
@@ -85,7 +134,8 @@ app.factory('pageLoad', ['$http', function ($http) {
 	}
 
 	return {
-		getPage: getPage
+		getPage: getPage,
+
 	};
 }]);
 
@@ -100,4 +150,3 @@ app.service('pageLoad1', ['$http', function ($http) {
 
 	this.getData = getData;
 }]);
-

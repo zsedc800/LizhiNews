@@ -1,4 +1,13 @@
+
 app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css, pageLoad) {
+	function showPage(x) {
+		var arr = JSON.parse(localStorage.getItem("titleList")),
+			obj = {};
+		for (var i = 0, len = arr.length; i < len; i++) {
+			obj[arr[i]] = i + 1;
+		}
+		pageLoad.getPage('data/' + obj[x] + '.json', $scope);
+	}
 	if (!($scope.titleList = JSON.parse(localStorage.getItem("titleList")))) {
 		$scope.titleList = ['头条', '在现场', '江苏卫视', '荔枝锐评',
 		'原创', '图集', '娱乐', '专题', '荔枝派', '社会', '财经', '体育', '汽车', '科技', '房产',
@@ -7,14 +16,18 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 	}
 	var index = 1;
 	$css.add('css/home.css');
-	pageLoad.getPage('data/4.json', $scope);
+	pageLoad.getPage('data/20.json', $scope);
+	$scope.showPage = showPage;
 
 }])
-
-.controller('videoCtrl', function ($scope, $css) {
+.controller('videoCtrl', function ($scope, $css,videoService) {
 		$scope.data = 'video';
+		videoService.load();
 		$css.add('css/video.css');
+		$scope.test = videoService.test;
+		
 	})
+
 	.controller('fmCtrl', function ($scope, $css, $http, FmController) {
 		FmController.getScope($scope);
 		$http.get("data/live.json").success(function(res){$scope.data = res});
@@ -35,5 +48,5 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 	})
 	.controller('findCtrl', function ($scope, $css) {
 		$scope.data = 'find';
-		$css.add('css/find.css')
+		$css.add('css/find.css');
 	});

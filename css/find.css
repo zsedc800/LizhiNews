@@ -1,0 +1,19 @@
+#container {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.find-wrap {
+  width: 100%;
+}
+.find-wrap div {
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+.find-wrap a {
+  display: block;
+  width: 100%;
+}
+.find-wrap a img {
+  width: 100%;
+}
