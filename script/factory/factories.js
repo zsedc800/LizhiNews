@@ -150,3 +150,65 @@ app.service('pageLoad1', ['$http', function ($http) {
 
 	this.getData = getData;
 }]);
+
+
+//mine页面的factory
+app.factory("mineService",function(){
+	var factory = {}
+	
+	//登录界面
+	var login = document.getElementById("login");
+	factory.FN1 = function(){		
+			login.style.display ="block" ;		
+	}
+	factory.FN2 = function(){
+			login.style.display ="none" ;	
+	}
+	
+	//天气界面
+	var weather = document.getElementById("weather");
+	factory.FN3 = function(){		
+			weather.style.display ="block" ;		
+	}
+	factory.FN4 = function(){
+			weather.style.display ="none" ;	
+	}
+	
+	//星座界面
+	var constellation = document.getElementById("constellation");
+	factory.FN5 = function(){		
+			constellation.style.display ="block" ;		
+	}
+	factory.FN6 = function(){
+			constellation.style.display ="none" ;	
+	}
+	
+	//反馈界面
+	var feedback = document.getElementById("feedback");
+	factory.FN7 = function(){		
+			feedback.style.display ="block" ;		
+	}
+	factory.FN8 = function(){
+			feedback.style.display ="none" ;	
+	}
+	
+	//关于我们界面
+	var aboutUs = document.getElementById("aboutUs");
+	factory.FN9 = function(){		
+			aboutUs.style.display ="block" ;		
+	}
+	factory.FN10 = function(){
+			aboutUs.style.display ="none" ;	
+	}
+	
+	//设置页面
+	var setUp = document.getElementById("setUp");
+	factory.FN11 = function(){		
+			setUp.style.display ="block" ;		
+	}
+	factory.FN12 = function(){
+			setUp.style.display ="none" ;	
+	}
+	
+	return factory;
+})

@@ -1,0 +1,483 @@
+
+/*全局*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+ul,li,ol{
+	list-style:none;
+}
+html,body{
+
+	width:100%;
+	height:100%;
+	background-color:#ebebeb;
+	overflow:hidden; 
+}
+a{
+	text-decoration: none;
+}
+
+/*----------------主界面-------------------*/
+/*-----------mine_top----------*/
+.mine_top{
+	width:10rem;
+	height:4.1rem;
+	background: url(../images/mine/mine_topbg.jpg) no-repeat;
+	background-size: 100%;
+	position:relative;
+	left:0;
+	top:0;
+}
+.mine_top .personal_img{
+	width:2.2rem;
+	height:2.2rem;
+	border:1px solid gray;
+	background: #ebebeb;
+	border-radius: 50%;
+	position:absolute;
+	left:40%;
+	top:20%;
+}
+.mine_top .log{
+	font-size: 0.4rem;
+	color:white;
+	position:absolute;
+	left:43%;
+	bottom:10%;
+}
+
+/*-----------mine_middle----------*/
+.mine_middle{
+	width:100%;
+	height:1.7rem;
+	color:#c6c6c6;
+	font-size:0.4rem;
+	display: flex;
+	text-align:center;
+	background: #fff;
+}
+.mine_middle span{
+	margin-top: 0.2rem;
+	height:1.3rem;
+	width:50%;
+	flex:auto;
+	border-right: 1px solid #ebebeb;
+}
+.mine_middle span:last-child{
+	border:none;
+}
+.mine_middle span img{
+	width:0.8rem;
+	height:0.5rem;
+}
+.mine_middle .xingJi{
+	width:1.6rem;
+	height:0.35rem;
+}
+/*-----------mine_main----------*/
+.mine_main{
+	width:100%;
+	height:8.4rem;
+	font-size: 0.4rem;
+	margin-top: 0.3rem;
+}
+.mine_main .main_top,.main_bottom{
+	height:3.9rem;
+	background: #fff;
+}
+.main_top li,.main_bottom li{
+	width:95%;
+	margin-left:5%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+}
+.main_top li img,.main_bottom li img{
+	vertical-align: center;
+	width:0.6rem;
+	height: 0.6rem;
+	
+} 
+.main_top li p,.main_bottom li p{
+	display: inline-block;
+	margin-left: 0.4rem;
+	width:8rem;
+	border-bottom: 1px solid #ebebeb;
+}
+.main_top li p span,.main_bottom li p span{
+	float:right;
+	font-size: 0.3rem;
+}
+.main_top li p span img,.main_bottom li p span img{
+	width:0.2rem;
+	height:0.4rem;
+}
+.main_bottom{
+	margin-top: 0.3rem;
+}
+.main_top li:last-child p{
+	border-bottom: none;
+}
+.main_bottom li:last-child p{
+	border-bottom: none;
+}
+/*-----------------二级页面---------------*/
+
+/*-----登陆界面----*/
+#login{
+	width:10rem;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background: white;
+	z-index: 2;
+	display: none;
+}
+.login_header,.feedback_header,.aboutUs_header,.setUp_header{
+	width:100%;
+	height:1.2rem;
+	line-height: 1.2rem;
+	color:#ee7071;
+	font-size: 0.45rem;
+	border-bottom: 1px solid #ebebeb;
+}
+.login_header .back,.feedback_header .back,.aboutUs_header .back,.setUp_header .back{
+	float:left;
+	margin:0.4rem 0 0 0.3rem;
+}
+.login_header p,.setUp_header p{
+	float:left;
+	margin-left:4rem;
+	font-size:0.45rem;
+	color:#db1822;
+}
+.yourmsg{
+	width:100%;
+	height:10rem;
+	border-bottom: 1px solid #ebebeb;
+}
+.yourmsg .num{
+	width:95%;
+	margin-left: 5%;
+	text-indent: 1rem;
+	height:2rem;
+	font-size: 0.5rem;
+	outline: none;
+	border:none;
+	border-bottom:1px solid #ebebeb;
+	background: url(../images/mine/phone.jpg) no-repeat left center;
+	background-size:4.5%; 
+}
+.yourmsg .psw{
+	width:95%;
+	margin-left: 5%;
+	text-indent: 1rem;
+	height:2rem;
+	font-size: 0.5rem;
+	outline: none;
+	border:none;
+	border-bottom:1px solid #ebebeb;
+	background: url(../images/mine/lockicon.jpg) no-repeat left center;
+	background-size:4.5%; 
+}
+.yourmsg .btn{
+	width:95%;
+	margin:1rem 0 0 0.25rem;
+	height:1.2rem;
+	background: #ea5455;
+	color:white;
+	font-size: 0.5rem;
+	border-radius: 3px;
+	border:none;
+	outline: none;
+}
+.yourmsg .aOne{
+	color:#b8b7b7;
+	font-size: 0.4rem;
+	margin-top:0.4rem ;
+	display: inline-block;
+	width:48%;
+	text-align: right;
+	border-right: 1px solid #ebebeb;
+}
+.yourmsg .aTwo{
+	margin-top:0.4rem ;
+	display: inline-block;
+	width:40%;
+	text-align: left;
+	color:#b8b7b7;
+	font-size: 0.4rem;	
+}
+
+.thirdLog{
+	width:100%;
+	height:4rem;
+	margin-top: 0.3rem;
+}
+.thirdLog h3{
+	width:100%;
+	text-align: center;
+	font-size: 0.35rem;
+	color:#b8b7b7;
+}
+.thirdLog img{
+	width:1.2rem;
+	height:1.2rem;
+	margin:1.5rem 1rem 0 1rem;
+}
+
+/*-----用户反馈页面------*/
+#feedback{
+	width:10rem;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background: white;
+	z-index: 3;
+	display: none;
+}
+.feedback_header p,.aboutUs_header p{
+	margin-left: 40%;
+	color:#db1822;
+	font-size:0.45rem;
+}
+.message{
+	width:95%;
+	margin:0.4rem auto;
+}
+.message input{
+	font-size: 0.4rem;
+	width:100%;
+	height:3.5rem;
+	outline: none;
+	border-radius: 3px;
+	padding-top: 0;
+	padding-bottom: 2.5rem;
+	padding-left:0.3rem;
+
+}
+.message button{
+	width:100%;
+	height:1.1rem;
+	color:white;
+	font-size: 0.5rem;
+	text-align: center;
+	line-height: 1.1rem;
+	background: #ea5455;
+	border-radius: 3px;
+	margin-top: 1rem;
+	border:none;
+	outline:none ;
+}
+
+/*----关于我们-----*/
+#aboutUs{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background: white;
+	z-index: 4;
+	display: none;
+}
+
+.lizhi{
+	display: block;
+	width:6rem;
+	height:1.5rem;
+	margin:1rem auto;
+}
+.direction{
+	width:90%;
+	margin:auto;
+	color:#b8b7b7;
+	font-size: 0.4rem;
+	text-indent: 0.6rem;
+	line-height:0.6rem; 
+}
+.morePro{
+	margin-top: 1rem;
+	border-top:1px solid #ebebeb;
+}
+.morePro h3{
+	width:100%;
+	height:2rem;
+	line-height: 2rem;
+	color:#b8b7b7;
+	font-size:0.4rem;
+	text-align: center;
+}
+.morePro img{
+	display: block;
+	width:8.5rem;
+	height:1.5rem;
+	margin:auto;
+}
+
+/*---设置页面---*/
+#setUp{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background: white;
+	z-index: 5;
+	font-size: 0.45rem;
+	color:#d5d5d5;
+	display: none;
+}
+.setup_main{
+	margin:0.4rem 0 0.4rem 0.3rem; 
+	height:2.7rem;
+	border-bottom: 1px solid #ebebeb;
+}
+.setup_main input{
+	width:6.5rem;
+}
+.setup_main .zihao{
+	font-size:0.6rem;
+	margin-right:0.2rem;
+}
+.setup_main .dir{
+	font-size: 0.4rem;
+	margin-left: 40%;
+}
+.setup_main .smart{
+	font-size:0.35rem ;
+	margin:0.4rem 0.4rem 0 1.5rem;
+}
+.setup_main .big{
+	font-size:0.5rem ;
+	margin-left: 0.3rem;
+}
+
+.setList li{
+	height:2.2rem;
+}
+.setList li p{
+	width:80%;
+	padding-bottom:0.4rem ;
+	border-bottom: 1px solid #ebebeb;
+	float:left;
+	background:url(../images/mine/btn1.jpg) no-repeat right top ;
+}
+.setList .clearMeg{
+	width:67%;
+	background: none;
+}
+.setList li .memory{
+	float:right;
+	font-size: 0.3rem;
+	margin-right: 0.3rem;
+}
+.first{
+	float:left;
+	margin-left:0.5rem;
+	margin-right:0.5rem ;
+}
+
+/*----天气页面----*/
+#weather{
+	width:100%;
+	height:100%;
+	background-image: -webkit-radial-gradient(circle,#b5e7ef,#63b6d6);
+  	background-image: radial-gradient(circle,#b5e7ef,#63b6d6);
+  	position: absolute;
+  	left:0;
+  	top:0;
+  	z-index: 6;
+  	color:white;
+  	display: none;
+}
+.weather_header{
+	width:100%;
+	height:1.2rem;
+	line-height: 1.2rem;
+	font-size: 0.4rem;
+}
+.weather_header .glyphicon-chevron-left{
+	float:left;
+}
+.weather_header p{
+	float:left;
+	margin-left:
+}
+.glyphicon-map-marker{
+	float:left;
+	margin-left:35% ;
+}
+
+.weather_pic img{
+	display: block;
+	margin:1.5rem auto 1rem;
+}
+
+ol li{
+	height:1rem;
+	font-size: 0.4rem;
+	text-align:center;
+}
+ol li:first-child{
+	height:4rem;
+	font-size: 3rem;
+}
+
+/*----星座页面-----*/
+#constellation{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 6;
+	background: url(../images/mine/xingkong.jpg) no-repeat;
+	background-size:110%; 
+	color:white;
+	font-size: 0.5rem;
+	display: none;
+}
+
+.constellation_header{
+	width:100%;
+	height:1.2rem;
+	line-height: 1.2rem;
+	font-size: 0.45rem;
+}
+.glyphicon-chevron-left{
+	float:left;
+	margin-left:0.3rem;
+}
+.constellation_header p{
+	float: left;
+	margin-left: 35%;
+}
+
+.constellation_main{
+	height:5.5rem;
+	border-bottom: 1px solid #31355a;
+	position: relative;
+	left:0;
+	top:0;
+}
+.constellation_main .xing{
+	display: block;
+	margin:0.65rem auto;
+}
+.constellation_main p{
+	font-size: 0.4rem;
+	position: absolute;
+	left:0.5rem;
+	bottom:0.5rem;
+}
+.constellation_footer p{
+	font-size:0.4rem;
+	width:95%;
+	margin:0.4rem auto;
+	text-indent: 0.6rem;
+}
+/*-----------end--------------*/

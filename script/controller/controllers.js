@@ -42,9 +42,21 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 		$scope.proWriGoto = FmController.proWriGoto;
 		
 	})
-	.controller('mineCtrl', function ($scope, $css) {
+	.controller('mineCtrl', function ($scope, $css,mineService) {
 		$scope.data = 'mine';
 		$css.add('css/mine.css');
+		$scope.FN1 = mineService.FN1;
+		$scope.FN2 = mineService.FN2;
+		$scope.FN3 = mineService.FN3;
+		$scope.FN4 = mineService.FN4;
+		$scope.FN5 = mineService.FN5;
+		$scope.FN6 = mineService.FN6;
+		$scope.FN7 = mineService.FN7;
+		$scope.FN8 = mineService.FN8;
+		$scope.FN9 = mineService.FN9;
+		$scope.FN10 = mineService.FN10;
+		$scope.FN11 = mineService.FN11;
+		$scope.FN12 = mineService.FN12;
 	})
 	.controller('findCtrl', function ($scope, $css) {
 		$scope.data = 'find';
