@@ -1,17 +1,47 @@
 //videoService----视频页面的factory
-app.factory('videoService',function($timeout){
+app.factory('videoService',function($timeout,$http){
 	var factory = {};
 	//TouchSlide初始化
-	fn = function(){
-		TouchSlide({
-			slideCell: "#leftTabBox",
-			effect: "leftLoop"
+//	var fn = function(){
+//		TouchSlide({
+//			slideCell: "#leftTabBox",
+//			effect: "leftLoop"
+//		});
+//		
+//	}
+//	factory.load = function(scope){
+//		$timeout( fn, 0, false );
+//	}
+	
+	//获得数据
+	factory.render = function(scope){
+		$http.get("data/video.json").success(function(res){
+			scope.videoJsonData = res;
+//			scope.$apply();
+//			console.log(res);
+		});
+		
+	}
+	
+	var test = function(){
+		$(".hd").on("click",function(e){
+//			$(e.target).css({
+//				color:"red"
+//			})
+			$(e.target).parent().find("li").removeClass("isRedColor");
+			$(e.target).addClass("isRedColor");
+			$(".bd>div").hide();
+			var index = $(e.target).index();
+			var obj = $(".bd>div")[index];
+			$(obj).show();
 		});
 	}
-	factory.load = function(){
-		$timeout( fn, 0, false );
-	}
+	
+	test();
+
 	return factory;
+	
+	
 })
 
 
@@ -124,7 +154,7 @@ app.factory('pageLoad', ['$http', function ($http) {
 app.service('pageLoad1', ['$http', function ($http) {
 	function getData(url, scope) {
 		$http.get(url).success(function (res) {
-			console.log(res);
+//			console.log(res);
 			scope.page1 = res;
 		});
 	}

@@ -17,15 +17,14 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 	$css.add('css/home.css');
 	pageLoad.getPage('data/20.json', $scope);
 	$scope.showPage = showPage;
-
+	
 }])
-.controller('videoCtrl', function ($scope, $css,videoService) {
-		$scope.data = 'video';
-		videoService.load();
+.controller('videoCtrl', ["$scope","$css","videoService",function ($scope, $css,videoService) {
+//		$scope.data = 'video';
+		videoService.render($scope);
+//		videoService.load();
 		$css.add('css/video.css');
-		$scope.test = videoService.test;
-		
-	})
+	}])
 
 .controller('fmCtrl', function ($scope, $css, $http, FmController) {
 		//		$http.get("http://api.litchi.jstv.com:800/audio/live").success(function(res){$scope.data = res});
