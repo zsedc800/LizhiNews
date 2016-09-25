@@ -19,6 +19,7 @@
 //videoService----视频页面的factory
 app.factory('videoService',function($timeout,$http){
 	var factory = {};
+	var thisScope = {};
 	//TouchSlide初始化
 //	var fn = function(){
 //		TouchSlide({
@@ -31,6 +32,12 @@ app.factory('videoService',function($timeout,$http){
 //		$timeout( fn, 0, false );
 //	}
 	
+	factory.getScope = function(scope){
+		thisScope = scope;
+		console.log(thisScope)
+	}
+	
+	
 	//获得数据
 	factory.render = function(scope){
 		$http.get("data/video.json").success(function(res){
@@ -38,6 +45,7 @@ app.factory('videoService',function($timeout,$http){
 //			scope.$apply();
 //			console.log(res);
 		});
+
 		
 	}
 	
@@ -54,8 +62,42 @@ app.factory('videoService',function($timeout,$http){
 			$(obj).show();
 		});
 	}
-	
+	//切换tab
 	test();
+	
+	//显示new列表
+	$(".jstv").on("click",function(e){
+//		var obj = $(this).children();
+		var className = $(e.target).parent("a").attr("ng-class")
+//		console.log(className);
+		$(".newsListWrap").show();
+		$("html").css({
+			backgroundColor:"#FFF"
+		})
+		switch (className){
+			case "jsxsk":
+					$http.get("data/video_jsxsk.json").success(function(res){
+					thisScope.videoNewsListData = res;
+				});
+				break;
+			case "xwy":
+					$http.get("data/video_xwy.json").success(function(res){
+					thisScope.videoNewsListData = res;
+				});
+				break;
+			case "wjxw":
+					$http.get("data/video_wjxw.json").success(function(res){
+					thisScope.videoNewsListData = res;
+				});
+				break;
+			default:
+				break;
+		}
+	});
+	$(".arrowLeft").on("click",function(){
+		$(".newsListWrap").hide();
+	});
+
 
 	return factory;
 	

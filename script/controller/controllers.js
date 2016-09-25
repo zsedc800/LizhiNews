@@ -22,7 +22,9 @@ app.controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css
 }])
 .controller('videoCtrl', ["$scope","$css","videoService",function ($scope, $css,videoService) {
 //		$scope.data = 'video';
+		videoService.getScope($scope);
 		videoService.render($scope);
+		
 //		videoService.load();
 		$css.add('css/video.css');
 	}])

@@ -9,38 +9,132 @@
 			<li>教育频道</li>
 		</ul>
 	</div>
-	
+
 	<div class="bd">
-		
-		<div class="jstv" style="display: block;" >
-			<a ng-class="{{x.name}}" ng-href="{{x.href}}" ng-repeat="x in videoJsonData.jstv">
-				<img class="img-bgd" ng-src="{{x.img_src}}"/>
+
+		<div class="jstv" style="display: block;">
+			<a ng-class="{{x.name}}" ng-repeat="x in videoJsonData.jstv">
+				<img class="img-bgd" ng-src="{{x.img_src}}" />
 				<p>{{x.title}}</p>
 			</a>
 		</div>
-		
-		<div class="ggxw" >
+
+		<div class="ggxw">
 			<a ng-class="{{x.name}}" ng-href="{{x.href}}" ng-repeat="x in videoJsonData.ggxw">
-				<img class="img-bgd" ng-src="{{x.img_src}}"/>
+				<img class="img-bgd" ng-src="{{x.img_src}}" />
 				<p>{{x.title}}</p>
 			</a>
 		</div>
-		
+
 		<div class="cspd">
 			<a ng-class="{{x.name}}" ng-href="{{x.href}}" ng-repeat="x in videoJsonData.cspd">
-				<img class="img-bgd" ng-src="{{x.img_src}}"/>
+				<img class="img-bgd" ng-src="{{x.img_src}}" />
 				<p>{{x.title}}</p>
 			</a>
 		</div>
-		
-		<div class="jypd" >
+
+		<div class="jypd">
 			<a ng-class="{{x.name}}" ng-href="{{x.href}}" ng-repeat="x in videoJsonData.jypd">
-				<img class="img-bgd" ng-src="{{x.img_src}}"/>
+				<img class="img-bgd" ng-src="{{x.img_src}}" />
 				<p>{{x.title}}</p>
 			</a>
 		</div>
 	</div>
+
+	<style type="text/css">
+		/*body {
+			margin: 0;
+			padding: 0;
+			font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+			color: #333;
+			-webkit-tap-highlight-color: transparent
+		}
+		
+		div {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box
+		}*/
+		.arrowLeft{
+			height: 0.72rem;
+			font-size:0.75rem ;
+			line-height: 0.9rem;
+			text-indent: 0.4rem;
+		}
+		.flex {
+			display: flex;
+			display: -webkit-flex;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox
+		}
+		
+		.flex1 {
+			flex: 1;
+			-moz-box-flex: 1.0;
+			-webkit-box-flex: 1.0;
+			box-flex: 1.0
+		}
+		
+		.news-main {
+			padding: 0 20px;
+			margin: 0 auto;
+			border-bottom: 1px solid #e8e8e8;
+		}
+		
+		.news-main .flex {
+			padding: 15px 0;
+		}
+		
+		.news-main img {
+			width: 120px;
+			height: 73px;
+		}
+		
+		.news-text {
+			width: 100%;
+			height: 50px;
+			padding-left: 20px;
+			line-height: 25px;
+			overflow: hidden;
+			font-size: .9em;
+		}
+		
+		.news-time {
+			/*position: absolute;bottom: 0;right: 0;*/
+			font-size: .8em;
+			color: #888;
+			text-align: right;
+			height: 23px;
+			line-height: 23px;
+		}
+	</style>
+	<!--<div class="news-list">
+		<div class="news-main" data-link="http://v.jstv.com/wap/a/20160925/1474801451994.shtml">
+			<div class="flex">
+				<img src="http://img.v.jstv.com/images/2016/9/25/JSTV_JSWS_1474800965340_o0tpyA8_0.jpg">
+				<div class="flex1">
+					<div class="news-text">江苏新时空 9月25日</div>
+					<div class="news-time">2016/09/25</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
 	
+	<div class="newsListWrap">
+		<div class="arrowLeft"><</div>
+		<div class="news-list" ng-repeat="x in videoNewsListData.data">
+			<div class="news-main" data-link="{{x.itemHref}}">
+				<div class="flex">
+					<img ng-src="{{x.thumbImg}}">
+					<div class="flex1">
+						<div class="news-text">{{x.title}}</div>
+						<div class="news-time">{{x.PublishDate}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	
+
 </div>

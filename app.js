@@ -25,3 +25,13 @@ var app = angular.module('myLizhiNews', ['ngRoute', 'angularCSS'])
 				redirectTo: '/'
 			});
 }]);
+
+
+
+
+
+
+
+
+
+

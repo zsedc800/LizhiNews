@@ -92,5 +92,12 @@
 	padding-bottom: 0.18rem;
 	color: #363636;
 }
-
-
+/*----------------dataBindCont-------------------*/
+.newsListWrap{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #FFFFFF;
+	top: 1.375rem;
+	display: none;
+}
