@@ -1,3 +1,161 @@
-<div>
-	<p>mine : {{data}}</p>
-</div>
+<div id="mine">
+	<!-- 主页面 -->
+	<div class="mine_top">
+		<div class="personal_img" ng-click="FN1()">
+			
+		</div>
+		<p class="log" ng-click="FN1()">点击登录</p>
+	</div>
+	<div class="mine_middle">
+		<span class="left" ng-click="FN3()">
+			<img src="images/mine/weather.jpg">
+			<p>北京23℃/16℃</p>
+		</span>
+		<span class="right" ng-click="FN5()">
+			<img src="images/mine/xingzuo.jpg">
+			<p>白羊座<img src="./images/mine/xing1.jpg"  class="xingJi"/></p>
+		</span>
+	</div>
+	<div class="mine_main">
+		<ul class="main_top">
+			<li ng-click="FN1()">
+				<img src="images/mine/lizhi.jpg"/>
+				<p>我的荔枝树<span><img src="./images/mine/back2.jpg"/></span></p>
+			</li>
+			<li ng-click="FN1()">
+				<img src="images/mine/lizhi2.jpg"/>
+				<p>我的收藏<span><img src="./images/mine/back2.jpg"/></span></span></p>
+			</li>
+			<li ng-click="FN1()">
+				<img src="images/mine/lizhi3.jpg"/>
+				<p>我的兑换<span><img src="./images/mine/back2.jpg"/></span></span></p>
+			</li>
+		</ul>
+		<ul class="main_bottom">
+			<li ng-click="FN7()">
+				<img src="images/mine/lizhi4.jpg"/>
+				<p>用户反馈<span><img src="./images/mine/back2.jpg"/></span></span></p>
+			</li>
+			<li ng-click="FN9()">
+				<img src="images/mine/lizhi5.jpg"/>
+				<p>关于我们<span><img src="./images/mine/back2.jpg"/></span></span></p>
+			</li>
+			<li ng-click="FN11()">
+				<img src="images/mine/lizhi6.jpg"/>
+				<p>设置<span><img src="./images/mine/back2.jpg"/></span></span></p>
+			</li>
+		</ul>
+	</div>
+	<!-- 二级页面 -->
+
+	<!-- 登陆界面 -->
+	<div id="login">
+		<div class="login_header">
+			<img src="images/mine/back.jpg" class="back" ng-click="FN2()"/>
+			<p>登录</p>
+		</div>
+		<div class="yourmsg">
+			<input type="text" placeholder="手机号码" class="num">
+			<input type="password" placeholder="密码" class="psw">
+			<button class="btn">提交</button>
+			<a href="javascript:void(0)" class="aOne">快速注册</a>
+			<a href="javascript:void(0)" class="aTwo">忘记密码</a>
+		</div>
+		<div class="thirdLog">
+			<h3>第三方登录</h3>
+			<img src="images/mine/logicon1.jpg" alt="mypicture">
+			<img src="images/mine/logicon2.jpg" alt="mypicture">
+			<img src="images/mine/logicon3.jpg" alt="mypicture">
+		</div>
+	</div>
+
+	<!-- 反馈页面 -->
+	<div id="feedback">
+		<div class="feedback_header">
+			<img src="images/mine/back.jpg" class="back" ng-click="FN8()"/>
+			<p>用户反馈</p>
+		</div>
+		<div class="message">
+			<input type="text" placeholder="请描述遇到的问题，我们将尽快解决。">
+			<button>提交</button>
+		</div>
+	</div>
+
+	<!-- 关于我们页面 -->
+	<div id="aboutUs">
+		<div class="aboutUs_header">
+			<img src="images/mine/back.jpg" class="back" ng-click="FN10()"/>
+			<p>关于我们</p>
+		</div>
+		<img src="images/mine/us1.jpg" class="lizhi">
+		<div class="direction">
+			<p>"荔枝新闻"是江苏广电倾力打造的一款独具个性的新闻应用。读新闻，看专栏，观视频，世界尽在掌中；玩活动，得积分，赢奖品，乐趣由你做主！这里有怪才小编，嬉笑怒骂展现人间百态；这里有一手花絮，最近距离体验王牌综艺；这里有权威记者，第一时间走进新闻现场；这里还有大牌顾问，帮你排忧解难。荔枝新闻，我们在这里，伴你看世界！</p>
+		</div>
+		<div class="morePro">
+			<h3>更多旗下产品</h3>
+			<img src="images/mine/us2.jpg" alt="mypicture">
+		</div>
+	</div>
+
+	<!--  设置页面    -->
+	<div id="setUp">
+		<div class="setUp_header">
+			<img src="images/mine/back.jpg" class="back" ng-click="FN12()"/>
+			<p>设置</p>
+		</div>
+		<div class="setup_main">
+			<p><span class="zihao">T</span>字号大小</p>
+			<span class="smart">A</span><input type="range" name="range" max=200 min=20 value="60"><span class="big">A</span>
+			<span class="dir">这个字大小应该正好</span>
+		</div>
+		<ul class="setList">
+			<li>
+				<img src="images/mine/yueliang.jpg" alt="" class="first"/>
+				<p>夜间模式</p>
+			</li>
+			<li>
+				<img src="images/mine/wutu.jpg" alt="" class="first"/>
+				<p>无图模式</p>
+			</li>
+			<li>
+				<img src="images/mine/xinxi.jpg" alt="" class="first"/>
+				<p>消息推送</p>
+			</li>
+			<li>
+				<img src="images/mine/laji.jpg" alt="" class="first"/>
+				<p class="clearMeg">清除缓存</p>
+				<span class="memory">10.3MB</span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 天气页面 -->
+	<div id="weather">
+		<div class="weather_header">
+			<span ng-click="FN4()" class="play glyphicon glyphicon-chevron-left"></span>
+			<span class="play glyphicon glyphicon-map-marker"></span>
+			<p>北京市</p>
+		</div>
+		<div class="weather_pic"><img src="./images/mine/tian.png"/></div>
+		<ol>
+			<li>26°</li>
+			<li>26°C/17°C  霾  无持续风向微风</li>
+			<li>星期四  2016-09-22  丙申[猴]年八月初五</li>
+		</ol>
+	</div>
+
+	<!-- 星座界面 -->
+	<div id="constellation">
+		<div class="constellation_header">
+			<span ng-click="FN6()" class="play glyphicon glyphicon-chevron-left"></span>
+			<p>白羊座</p>	
+		</div>
+		<div class="constellation_main">
+			<img src="./images/mine/xingzuo1.jpg" class="xing"/>
+			<p>今日运势：<img src="./images/mine/xing.jpg" /> &nbsp;&nbsp;幸运色：白色  &nbsp;&nbsp;&nbsp;&nbsp;幸运数：7</p>
+		</div>
+		<div class="constellation_footer">
+			<p>周末来临，你的状态有些暴走，家人对你的管束可能让你浑身不自在，在职场上的事物也让你神经紧绷。不过好在头脑逐渐清晰了，工作上的分析能力逐渐走高。</p>
+		</div>
+	</div>
+</div> 
