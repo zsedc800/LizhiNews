@@ -17,3 +17,192 @@
 .find-wrap a img {
   width: 100%;
 }
+.find-activePack {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  height: 20rem;
+  z-index: 9999999;
+}
+.find-activePack .find-listContent {
+  box-sizing: border-box;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid gainsboro;
+  background: white;
+}
+.find-activePack .find-listContent .find-listContent-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.find-activePack .find-listContent .find-listContent-title div span {
+  display: block;
+  border: 1px solid red;
+  color: red;
+  font-size: 0.01rem;
+  width: 1rem;
+  padding: 0.1rem;
+}
+.find-activePack .find-listContent .find-listContent-title p {
+  margin-left: 0.5rem;
+}
+.find-listContent-img {
+  margin-top: 0.4rem;
+}
+.find-listContent-img img {
+  display: block;
+  width: 100%;
+}
+.find-local-service {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  height: 20rem;
+  z-index: 9999999;
+}
+.find-local-service .find-4-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.service-nav {
+  height: 1.2rem;
+  background: white;
+  width: 10rem;
+  color: #EB6162;
+  border-bottom: 1px solid gainsboro;
+  line-height: 1.2rem;
+  display: flex;
+  top: 0;
+  position: fixed;
+  justify-content: space-between;
+  font-size: 0.72rem;
+}
+.service-nav div {
+  margin-left: 0.3rem;
+}
+.service-nav div .span1 {
+  margin-left: 0.7rem;
+}
+.service-nav img {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.35rem;
+}
+.find-iconWrap {
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+}
+.find-iconWrap img {
+  display: block;
+  width: 1.5rem;
+  margin-bottom: 1rem;
+}
+.find-local-service-list div {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  width: 7rem;
+  line-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.find-lizhi-original {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  height: 70rem;
+  z-index: 9999999;
+}
+.find-lizhi-original .find-hand {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.find-lizhi-original .find-hand img {
+  display: block;
+}
+.find-lizhi-original .original-listWrap {
+  width: 9rem;
+  margin-left: 0.5rem;
+  background: white;
+  margin-top: 0.4rem;
+}
+.find-lizhi-original .original-listWrap .original-list {
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-top: none;
+}
+.find-lizhi-original .original-listWrap .original-list img {
+  width: 100%;
+}
+.original-list-title {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  padding-left: 0.3rem;
+}
+.original-list-title div {
+  margin-top: 0.1rem;
+}
+.original-list-title div img {
+  display: inline
+            width: 0.5rem;
+  height: 0.5rem;
+}
+.find-wrapP {
+  width: 7.7rem;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.3rem;
+  font-size: 0.5rem;
+}
+.find-lizhiShop {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  height: 20rem;
+  z-index: 9999999;
+}
+.find-lizhiShop .find-banner {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+.find-lizhiShop .find-banner img {
+  width: 100%;
+}
+.find-lizhiShop .goodsList {
+  width: 9rem;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.find-lizhiShop .goodsList .find-left {
+  width: 47%;
+  margin-top: 0.3rem;
+}
+.find-lizhiShop .goodsList .find-left img {
+  width: 100%;
+}
+.find-lizhiShop .goodsList .find-right {
+  width: 47%;
+  margin-top: 0.3rem;
+}
+.find-lizhiShop .goodsList .find-right img {
+  width: 100%;
+}

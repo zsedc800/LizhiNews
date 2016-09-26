@@ -155,7 +155,6 @@ img {
   background: #fff;
 }
 .fm_programa_more {
-  display: none;
   width: 100%;
   background: #fff;
 }
@@ -207,7 +206,6 @@ img {
   padding-top: 0.25rem;
 }
 .fm_radio_more {
-  display: none;
   width: 100%;
   background: #fff;
   z-index: 1;
