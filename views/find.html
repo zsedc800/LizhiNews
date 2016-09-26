@@ -1,8 +1,137 @@
 
 <div class="find-wrap">
-	<div class="find-list"><a href=""><img src="../img/find-1.jpg"/></a></div>
-	<div class="find-list"><a href=""><img src="../img/find-2.jpg"/></a></div>
-	<div class="find-list"><a href=""><img src="../img/find-3.jpg"/></a></div>
-	<div class="find-list"><a href=""><img src="../img/find-4.jpg"/></a></div>
+	<div class="find-list" ng-click = 'toggle1()'><a href=""><img src="images/find/find-1.jpg"/></a></div>
+	<div class="find-list" ng-click = 'toggle2()'><a href=""><img src="images/find/find-2.jpg"/></a></div>
+	<div class="find-list" ng-click = 'toggle3()'><a href=""><img src="images/find/find-3.jpg"/></a></div>
+	<div class="find-list" ng-click = 'toggle4()'><a href=""><img src="images/find/find-4.jpg"/></a></div>
+	
+</div>
+<!--1-->
+<div class="find-activePack" ng-show = "activePackIsShow1">
+	<!--<div class="find-listContent">
+		<div class="find-listContent-title">
+			<div class="">
+				<span>进行中</span>
+			</div>
+			<p>{{findJsonData.Data.List[0].Data.Title}}</p>
+		</div>
+		<div class="find-listContent-img">
+			<img src="images/find/find-1.jpg" alt="" />
+		</div>
+	</div>-->
+	
+	
+	<div class="find-listContent" ng-repeat="x in findJsonData.Data.List" >
+		<div class="find-listContent-title">
+			<div class="">
+				<span>进行中</span>
+			</div>
+			<p>{{x.Data.Title}}</p>
+		</div>
+		<div class="find-listContent-img">
+			<img ng-src="{{x.Data.Photo}}" alt="" />
+		</div>
+	</div>
+</div>
+<!--4-->
+<div class="find-local-service" ng-show = "activePackIsShow4">
+	<div class="service-nav">
+		<div>
+			<span><</span>
+			<span class="span1">x</span>
+		</div>
+		
+		<img src="images/find/icon-5.jpg"/>
+	</div>
+	<div class="find-4-list-wrap">
+		<div class="find-iconWrap">
+			<img src="images/find/icon-1.jpg"/>
+			<img src="images/find/icon-2.jpg"/>
+			<img src="images/find/icon-3.jpg"/>
+			<img src="images/find/icon-4.jpg"/>
+		</div>
+		<div class="find-local-service-list">
+			<div>
+				<p>购物</p>
+				<span>></span>
+			</div>
+			<div>
+				<p>快递</p>
+				<span>></span>
+			</div>
+			<div>
+				<p>外卖</p>
+				<span>></span>
+			</div>
+			<div>
+				<p>家政</p>
+				<span>></span>
+			</div>
+		</div>
+	</div>	
+</div>
+<!--3荔枝工厂-->
+<div class="find-lizhi-original" ng-show = "activePackIsShow3" >
+	<div class="service-nav " >
+		<div>
+			<span><</span>
+			<span class="span1">x</span>
+		</div>
+		
+		<img src="images/find/icon-5.jpg"/>
+	</div>
+	<div class="find-hand">
+		<img src="images/find/hand-1.jpg"/>
+		<img src="images/find/hand-2.jpg"/>
+	</div>
+	<div class="original-listWrap">
+		
+		<div class="original-list" ng-repeat="x in findJsonData2.Data.List">
+			<img ng-src = '{{x.Data.Photo}}'"/>
+			<div class="original-list-title">
+				<div class="">
+					<img src="images/find/hand-3.jpg"/>
+				</div>
+				<div class="find-wrapP">
+					<p>{{x.Data.Title}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
+<!--2荔枝商城-->
+<div class="find-lizhiShop" ng-show = "activePackIsShow2">
+	<div class="service-nav ">
+		<div>
+			<span><</span>
+			<span class="span1">x</span>
+		</div>
+		
+		<img src="images/find/icon-5.jpg"/>
+	</div>
+	<div class="find-banner">
+		<img src="images/find/banner-1.jpg"/>
+	</div>
+	<div class="goodsList">
+		<div class="find-left">
+			<img src="images/find/things-1.jpg"/>
+		</div>
+		<div class="find-right">
+			<img src="images/find/things-2.jpg"/>
+		</div>
+		<div class="find-left">
+			<img src="images/find/things-1.jpg"/>
+		</div>
+		<div class="find-right">
+			<img src="images/find/things-2.jpg"/>
+		</div>
+		<div class="find-left">
+			<img src="images/find/things-1.jpg"/>
+		</div>
+		<div class="find-right">
+			<img src="images/find/things-2.jpg"/>
+		</div>
+		
+	</div>
 </div>
