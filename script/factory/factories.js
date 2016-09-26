@@ -1,7 +1,6 @@
-
 // app.factory('randServer',function(){
 // 	var rand = {};
-	
+
 // 	rand.randFn = function(){
 // 		var randWidth = parseFloat(Math.random()*(97.4-28)+28);
 // 		var randHeight = parseFloat(Math.random()*(8.3-2.5)+2.5);
@@ -10,69 +9,126 @@
 // 		document.getElementsByClassName('zhuanti-content2').style.width = w;
 // 		document.getElementsByClassName('zhuanti-content3').style.width = parseFloat(97.4-randWidth + '%');
 // 	}
-	
-	
-	
+
+
+
 // 	return rand;
 // })
 
 //videoService----视频页面的factory
-app.factory('videoService',function($timeout){
+app.factory('videoService', function ($timeout) {
 	var factory = {};
 	//TouchSlide初始化
-	fn = function(){
+	var fn = function () {
 		TouchSlide({
 			slideCell: "#leftTabBox",
 			effect: "leftLoop"
 		});
 	}
-	factory.load = function(){
-		$timeout( fn, 0, false );
+	factory.load = function () {
+		$timeout(fn, 0, false);
 	}
 	return factory;
 })
 
 
-app.factory("FmController",function(){
+app.factory("FmController", function () {
 	var factory = {};
-	
+
 	var programaMore = document.getElementsByClassName("fm_programa_more")[0];
 	var fmRadioMore = document.getElementsByClassName("fm_radio_more")[0];
 	var fmMain = document.getElementsByClassName("fm_main")[0];
 	var tabBar = document.getElementsByClassName("tabBar")[0];
-	
-	factory.show = function(){
+
+	factory.show = function () {
 		fmRadioMore.style.height = window.screen.height + "px";
 	};
-	
-	factory.proAlGoto = function(){
+
+	factory.proAlGoto = function () {
 		//栏目推荐更多页面
 		fmMain.style.display = "none";
 		programaMore.style.display = "block";
 		tabBar.style.display = "none";
 		fmRadioMore.style.display = "none";
 	}
-	
-	factory.proWriGoto = function(){
+
+	factory.proWriGoto = function () {
 		//直播电台更多页面
 		fmMain.style.display = "none";
 		fmRadioMore.style.display = "block";
-		tabBar.style.display = "none";	
+		tabBar.style.display = "none";
 		programaMore.style.display = "none";
 	}
-	
-	factory.proBack = function(){
+
+	factory.proBack = function () {
 		//点击返回按钮返回到fm主页面
 		fmMain.style.display = "block";
 		programaMore.style.display = "none";
-		tabBar.style.display = "block";	
+		tabBar.style.display = "block";
 		fmRadioMore.style.display = "none";
 	}
-	
+
 	return factory;
 })
 
-app.factory('pageLoad', ['$http', function ($http) {
+app.factory('swiper', function ($timeout) {
+	function load(callback) {
+		$timeout(script, 0, false);
+	}
+
+	function loadSync(callback) {
+
+		var script = document.createElement('script'),
+			firstscript = document.getElementsByTagName('script')[0];
+		script.src = 'lib/idangerous.swiper2.7.6.js';
+		script.onload = callback;
+		firstscript.parentNode.insertBefore(script, firstscript);
+	}
+	return {
+		load: load
+	}
+});
+
+app.factory('swipe', function () {
+
+	function bindEvent(ev, callback) {
+		var calls = this._callbacks || (this._callbacks = {});
+		(this._callbacks[ev] || (this._callbacks[ev] = [])).push(callback);
+		return this;
+	}
+
+	function triggerEvent() {
+		var args = Array.prototype.slice.call(arguments, 0);
+		var ev = args.shift();
+		var list, calls, i, len;
+		if (!(calls = this._callbacks)) {
+			return this;
+		}
+		if (!(list = this._callbacks[ev])) {
+			return this;
+		}
+		for (i = 0, len = list.length; i < len; i++) {
+			list[i].apply(this, args);
+		}
+		return this;
+	}
+
+	function extend(target, obj) {
+		for (var i in obj) {
+			target[i] = obj[i];
+		}
+	}
+
+	return {
+		bindEvent: bindEvent,
+		triggerEvent: triggerEvent,
+		extend: extend
+	};
+
+});
+
+
+app.service('pageLoad', ['$http', '$apply', function ($http, $apply) {
 	function getPage(url, scope) {
 		$http.get(url).success(function (res) {
 			setPageData(res, scope);
@@ -130,22 +186,14 @@ app.factory('pageLoad', ['$http', function ($http) {
 		}
 		res.Data.List = list;
 		scope.page1 = res;
+		/*var tapContainer = document.getElementById('tapContainer');
+		tapContainer.addEventListener('touchstart', function () {
+			this.addEventListener('touchmove', function (ev) {
+				if (true) {
+
+				}
+			});
+		});*/
 	}
-
-	return {
-		getPage: getPage,
-
-	};
-}]);
-
-
-app.service('pageLoad1', ['$http', function ($http) {
-	function getData(url, scope) {
-		$http.get(url).success(function (res) {
-			console.log(res);
-			scope.page1 = res;
-		});
-	}
-
-	this.getData = getData;
+	this.getPage = getPage;
 }]);

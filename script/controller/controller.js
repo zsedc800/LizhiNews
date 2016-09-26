@@ -1,34 +1,33 @@
-app.
-controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css, pageLoad) {
+define(['myApp', 'services'], function (app) {
+	app.controller('homeCtrl', function ($scope, $css, pageLoad) {
 
 		function showPage(x) {
 			var arr = JSON.parse(localStorage.getItem("titleList")),
 				obj = {};
 			for (var i = 0, len = arr.length; i < len; i++) {
-				obj[arr[i]] = i + 1;
+				obj[arr[i]] = i;
 			}
 			pageLoad.getPage('data/' + obj[x] + '.json', $scope);
 		}
 		if (!($scope.titleList = JSON.parse(localStorage.getItem("titleList")))) {
-			$scope.titleList = ['头条', '在现场', '江苏卫视', '荔枝锐评',
-		'原创', '图集', '娱乐', '专题', '荔枝派', '社会', '财经', '体育', '汽车', '科技', '房产',
-		'军事', '监督', '真相帝', '江苏', '国际', '国内'];
+			$scope.titleList = ['头条', '江苏', '江苏卫视', '荔枝锐评',
+		'原创', '图集', '娱乐', '荔枝派', '社会', '财经', '体育', '汽车', '科技', '房产',
+		'军事', '国际', '国内'];
 			localStorage.setItem("titleList", JSON.stringify($scope.titleList));
 		}
 		var index = 1;
 		$css.add('css/home.css');
-		//pageLoad.getPage('data/20.json', $scope);
+		pageLoad.getPage('data/0.json', $scope);
 		$scope.showPage = showPage;
+	});
 
-}])
-	.controller('videoCtrl', function ($scope, $css, videoService) {
-		videoService.load();
+	app.controller('videoCtrl', function ($scope, $css, videoService) {
 		$css.add('css/video.css');
+		videoService.load();
 		$scope.test = videoService.test;
 
-	})
-
-.controller('fmCtrl', function ($scope, $css, $http, FmController) {
+	});
+	app.controller('fmCtrl', function ($scope, $css, $http, FmController) {
 		//		$http.get("http://api.litchi.jstv.com:800/audio/live").success(function(res){$scope.data = res});
 		$scope.data = {
 			"Data": [{
@@ -246,12 +245,14 @@ controller('homeCtrl', ['$scope', '$css', 'pageLoad', function ($scope, $css, pa
 		$scope.proAlGoto1 = FmController.proAlGoto;
 		$scope.proBack = FmController.proBack;
 		$scope.proWriGoto = FmController.proWriGoto;
-	})
-	.controller('mineCtrl', function ($scope, $css) {
+	});
+
+	app.controller('mineCtrl', function ($scope, $css) {
 		$scope.data = 'mine';
 		$css.add('css/mine.css');
-	})
-	.controller('findCtrl', function ($scope, $css) {
+	});
+	app.controller('findCtrl', function ($scope, $css) {
 		$scope.data = 'find';
 		$css.add('css/find.css');
 	});
+});

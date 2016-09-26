@@ -30,18 +30,23 @@
 }
 
 .title .title-wrapper{
-	
+	position: relative;
+	width: 45rem;
 }
+
 .title .title-item{
 	letter-spacing: 0;
 	font-size: .45rem;
 	padding: 0 .3rem;
+	display: inline-block;
 }
 
 
 .homePage .tapContainer{
 	width: 210rem;
-	overflow: hidden;	
+	overflow: hidden;
+	background-color: white;	
+	position: relative;
 }
 
 .tapContainer .pageview{

@@ -1,39 +1,69 @@
 /*require.config({
 	baseUrl: './',
 	paths: {
-		"angular": "lib/angular",
-		"angularAMD": "lib/angularAMD",
+		"jquery": "lib/jquery-1.12.3",
+		"swiper": "lib/idangerous.swiper2.7.6",
+		"TouchSilder": "lib/TouchSlide.1.1.js",
+		"angular": "lib/angular.min",
+
+		//"angularAMD": "lib/angularAMD",
 		"angular-route": "lib/angular-route",
 		"angularCSS": "lib/angular-css.min",
+		"route": "route",
+		"myApp": "myApp"
 	},
 	shim: {
 		"angular": {
 			exports: "angular"
 		},
-		"angular-route": ['angular'],
-		"angularAMD": ['angular'],
-		"angularCSS": ['angular']
-			//"ngload": ['angularAMD']
-	},
-	deps: ['app']
+		"angular-route": {
+			deps: ['angular'],
+			exports: 'angular-route'
+		},
+		"angularCSS": {
+			deps: ['angular', 'angular-route'],
+			exports: 'angularCSS'
+		}
+	}
 });*/
 
-
-// require 的配置文件 
 require.config({
-	// 引入核心文件
+	baseUrl: './',
 	paths: {
-		"angular": "./lib/angular.min",
-		"angular-route": "./lib/angular-route",
-		"angularAMD": "./lib/angularAMD",
-		"angular-css": "./lib/angular-css.min"
+		'jquery': 'lib/jquery-1.12.3',
+		'angular': 'lib/angular.min',
+		'angular-route': 'lib/angular-route',
+		'myApp': 'myApp',
+		"swiper": "lib/idangerous.swiper2.7.6",
+		'route': 'route',
+		"TouchSilder": "lib/TouchSlide.1.1",
+		'services': 'script/service/services',
+		'angularCSS': 'lib/angular-css.min',
+		'iscroller': 'lib/iscroll-probe'
+
 	},
-	// 定义非AMD规范JS
 	shim: {
-		"angular-route": ["angular"],
-		"angularAMD": ["angular"],
-		"angular-css": ["angular"]
-	},
-	// 当所有依赖文件加载完毕之后，启动app.js文件
-	deps: ["app"]
+		'angular': {
+			exports: 'angular'
+		},
+		'angular-route': {
+			deps: ['angular'],
+			exports: 'angular-route'
+		},
+		'angularCSS': {
+			deps: ['angular', 'angular-route'],
+			exports: 'angularCSS'
+		},
+		'TouchSilder': {
+			exports: 'TouchSilder'
+		}
+	}
+});
+document.documentElement.style.fontSize = document.body.clientWidth / 10 + 'px';
+window.onresize = function () {
+	document.documentElement.style.fontSize = document.body.clientWidth / 10 + 'px';
+}
+require(['jquery', 'angular', 'iscroller', 'route'], function ($, angular, iscroller) {
+	angular.bootstrap(document, ["myApp"]);
+
 });
